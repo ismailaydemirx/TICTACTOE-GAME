@@ -1,0 +1,15 @@
+D:\Software\Github Repository\SOS-Game\SOS-Game\bin\Debug\net6.0\TicTacToeGame.exe
+D:\Software\Github Repository\SOS-Game\SOS-Game\bin\Debug\net6.0\TicTacToeGame.deps.json
+D:\Software\Github Repository\SOS-Game\SOS-Game\bin\Debug\net6.0\TicTacToeGame.runtimeconfig.json
+D:\Software\Github Repository\SOS-Game\SOS-Game\bin\Debug\net6.0\TicTacToeGame.dll
+D:\Software\Github Repository\SOS-Game\SOS-Game\bin\Debug\net6.0\TicTacToeGame.pdb
+D:\Software\Github Repository\SOS-Game\SOS-Game\obj\Debug\net6.0\TicTacToeGame.GeneratedMSBuildEditorConfig.editorconfig
+D:\Software\Github Repository\SOS-Game\SOS-Game\obj\Debug\net6.0\TicTacToeGame.AssemblyInfoInputs.cache
+D:\Software\Github Repository\SOS-Game\SOS-Game\obj\Debug\net6.0\TicTacToeGame.AssemblyInfo.cs
+D:\Software\Github Repository\SOS-Game\SOS-Game\obj\Debug\net6.0\TicTacToeGame.csproj.CoreCompileInputs.cache
+D:\Software\Github Repository\SOS-Game\SOS-Game\obj\Debug\net6.0\TicTacToeGame.sourcelink.json
+D:\Software\Github Repository\SOS-Game\SOS-Game\obj\Debug\net6.0\TicTacToeGame.dll
+D:\Software\Github Repository\SOS-Game\SOS-Game\obj\Debug\net6.0\refint\TicTacToeGame.dll
+D:\Software\Github Repository\SOS-Game\SOS-Game\obj\Debug\net6.0\TicTacToeGame.pdb
+D:\Software\Github Repository\SOS-Game\SOS-Game\obj\Debug\net6.0\TicTacToeGame.genruntimeconfig.cache
+D:\Software\Github Repository\SOS-Game\SOS-Game\obj\Debug\net6.0\ref\TicTacToeGame.dll
