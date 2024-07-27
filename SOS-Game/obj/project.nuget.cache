@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "qV2EI5Yo5jtXM9dzY6ruN4fjDtR1OWSjmaE97PrnQ6zodtNXKrVTf3GEMLypiny+wpWSOfgeJbzNyfCdYsWrUA==",
+  "dgSpecHash": "6dyhrb3NhFoAshhZ/vOMHihl3Z9OMqTNtFKhhnbi4JwlEU5BBmEyY4D5H/DMc8sYkcFCPtI1bggNFNQvXSxV2w==",
   "success": true,
-  "projectFilePath": "D:\\Software\\Github Repository\\SOS-Game\\SOS-Game\\SOS-Game.csproj",
+  "projectFilePath": "D:\\Software\\Github Repository\\SOS-Game\\SOS-Game\\TicTacToeGame.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

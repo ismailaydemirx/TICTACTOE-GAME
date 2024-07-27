@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Software\\Github Repository\\SOS-Game\\SOS-Game\\SOS-Game.csproj",
-      "projectName": "SOS-Game",
-      "projectPath": "D:\\Software\\Github Repository\\SOS-Game\\SOS-Game\\SOS-Game.csproj",
+      "projectUniqueName": "D:\\Software\\Github Repository\\SOS-Game\\SOS-Game\\TicTacToeGame.csproj",
+      "projectName": "TicTacToeGame",
+      "projectPath": "D:\\Software\\Github Repository\\SOS-Game\\SOS-Game\\TicTacToeGame.csproj",
       "packagesPath": "C:\\Users\\BAYDEMIR\\.nuget\\packages\\",
       "outputPath": "D:\\Software\\Github Repository\\SOS-Game\\SOS-Game\\obj\\",
       "projectStyle": "PackageReference",

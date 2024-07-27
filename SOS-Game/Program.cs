@@ -79,7 +79,26 @@ class Program
 
         bool CheckDiagonal(char[,] board, int row, int column)
         {
-            throw new NotImplementedException();
+            int startColumn = Math.Max(0, column - 2);
+            int endColumn = Math.Max(0, column + 2);
+
+            //Diagonal Control
+            for (int i = startColumn; i < endColumn; i++)
+            {
+                // Bottom Right Control
+                if (board[row, i] == 'X' && board[row++, i++] == 'O' && board[row + 2, i + 2] == 'X')
+                {
+                    return true;
+                }
+
+                // Bottom Left Control
+                if (board[row, i] == 'X' && board[row--, i--] == 'O' && board[row - 2, i - 2] == 'X')
+                {
+                    return true;
+                }
+            }
+
+            return false;
         }
 
         bool CheckVertical(char[,] board, int row, int column)
