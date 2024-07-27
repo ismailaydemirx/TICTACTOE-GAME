@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Data.Common;
 
 
 class Program
@@ -77,24 +78,41 @@ class Program
             }
         }
 
+
         bool CheckDiagonal(char[,] board, int row, int column)
         {
-            int startColumn = Math.Max(0, column - 2);
-            int endColumn = Math.Max(0, column + 2);
+            int sizeY = board.GetLength(0);
+            int sizeX = board.GetLength(1);
 
-            //Diagonal Control
-            for (int i = startColumn; i < endColumn; i++)
+            //Diagonal Bottom-Right Control
+            for (int i = -2; i <= 0; i++)
             {
-                // Bottom Right Control
-                if (board[row, i] == 'X' && board[row++, i++] == 'O' && board[row + 2, i + 2] == 'X')
-                {
-                    return true;
-                }
 
-                // Bottom Left Control
-                if (board[row, i] == 'X' && board[row--, i--] == 'O' && board[row - 2, i - 2] == 'X')
+                if (row + i >= 0 && row + 2 < sizeY &&
+                    column + i >= 0 && column + 2 < sizeX)
                 {
-                    return true;
+                    if (board[row + i, column + i] == 'X' &&
+                        board[row + i + 1, column + i + 1] == 'O' &&
+                        board[row + i + 2, column + i + 2] == 'X')
+                    {
+                        return true;
+                    }
+                }
+            }
+
+            for (int i = 0; i <= 2; i++)
+            {
+                if (row + i > 0 && row + i + 2 < sizeY &&
+                    column - i >= 0 && column - i - 2 < sizeX)
+                {
+
+                    //Diagonal Bottom-Left Control
+                    if (board[row + i, column - 1] == 'X' &&
+                        board[row + i + 1, column - i - 1] == 'O' &&
+                        board[row + i + 2, column - i - 2] == 'X')
+                    {
+                        return true;
+                    }
                 }
             }
 
@@ -103,11 +121,11 @@ class Program
 
         bool CheckVertical(char[,] board, int row, int column)
         {
-            int startColumn = Math.Max(0, column - 2);
-            int endColumn = Math.Max(0, column + 2);
+            int startRow = Math.Max(0, row - 2);
+            int endRow = Math.Max(0, row + 2);
 
             //Vertical Control
-            for (int i = startColumn; i < endColumn; i++)
+            for (int i = startRow; i < endRow; i++)
             {
                 if (board[row, i] == 'X' && board[row, i++] == 'O' && board[row, i + 2] == 'X')
                 {
