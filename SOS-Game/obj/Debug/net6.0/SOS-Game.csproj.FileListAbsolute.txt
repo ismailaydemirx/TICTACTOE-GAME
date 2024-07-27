@@ -1,0 +1,14 @@
+D:\Software\Github Repository\SOS-Game\SOS-Game\bin\Debug\net6.0\SOS-Game.exe
+D:\Software\Github Repository\SOS-Game\SOS-Game\bin\Debug\net6.0\SOS-Game.deps.json
+D:\Software\Github Repository\SOS-Game\SOS-Game\bin\Debug\net6.0\SOS-Game.runtimeconfig.json
+D:\Software\Github Repository\SOS-Game\SOS-Game\bin\Debug\net6.0\SOS-Game.dll
+D:\Software\Github Repository\SOS-Game\SOS-Game\bin\Debug\net6.0\SOS-Game.pdb
+D:\Software\Github Repository\SOS-Game\SOS-Game\obj\Debug\net6.0\SOS-Game.GeneratedMSBuildEditorConfig.editorconfig
+D:\Software\Github Repository\SOS-Game\SOS-Game\obj\Debug\net6.0\SOS-Game.AssemblyInfoInputs.cache
+D:\Software\Github Repository\SOS-Game\SOS-Game\obj\Debug\net6.0\SOS-Game.AssemblyInfo.cs
+D:\Software\Github Repository\SOS-Game\SOS-Game\obj\Debug\net6.0\SOS-Game.csproj.CoreCompileInputs.cache
+D:\Software\Github Repository\SOS-Game\SOS-Game\obj\Debug\net6.0\SOS-Game.dll
+D:\Software\Github Repository\SOS-Game\SOS-Game\obj\Debug\net6.0\refint\SOS-Game.dll
+D:\Software\Github Repository\SOS-Game\SOS-Game\obj\Debug\net6.0\SOS-Game.pdb
+D:\Software\Github Repository\SOS-Game\SOS-Game\obj\Debug\net6.0\SOS-Game.genruntimeconfig.cache
+D:\Software\Github Repository\SOS-Game\SOS-Game\obj\Debug\net6.0\ref\SOS-Game.dll
