@@ -21,30 +21,63 @@ class Program
 
             PrintBoard(board);
 
+            bool gameWon = false;
 
-            while (true)
+            // Get player names
+            Console.Write("Enter the name of Player 1: ");
+            string playerOne = Console.ReadLine();
+            Console.WriteLine();
+
+            Console.Write("Enter the name of Player 2: ");
+            string playerTwo = Console.ReadLine();
+            Console.WriteLine();
+
+            Console.WriteLine("First player is starting...");
+            Console.WriteLine();
+            char currentPlayer = 'X';
+
+            while (!gameWon)
             {
-                Console.Write("Select Column:");
+                string currentPlayerName = (currentPlayer == 'X') ? playerOne : playerTwo
+
+                Console.Write($"{currentPlayerName}, Select Column:");
                 int column = int.Parse(Console.ReadLine()) - 1;
                 Console.WriteLine();
 
                 if (0 <= column && column < sizeX)
                 {
-                    Console.Write("Select Row:");
+                    Console.Write($"{currentPlayerName},Select Row:");
                     int row = int.Parse(Console.ReadLine()) - 1;
                     Console.WriteLine();
 
                     if ((0 <= column && column < sizeX) && (0 <= row && row < sizeY))
                     {
-                        Console.Write("Write Letter:");
-                        char letter = Console.ReadKey().KeyChar;
+                        Console.Write($"{currentPlayerName},Write Letter: (X/O): ");
+                        char letter = char.ToUpper(Console.ReadKey().KeyChar);
                         Console.WriteLine();
 
                         if (letter == 'X' || letter == 'O')
                         {
-                            board[row, column] = letter;
+                            if (board[row, column] == '\0') // Ensure cell is empty
+                            {
+                                board[row, column] = letter;
 
-                            PrintBoard(board);
+                                PrintBoard(board);
+
+                                if (CheckForSos(board, row, column))
+                                {
+                                    Console.WriteLine($"Player '{currentPlayerName}' wins!"); // add players.
+                                    gameWon = true;
+                                }
+
+                                // Switch player
+                                currentPlayer = (currentPlayer == currentPlayer) ? 'Computer' : currentPlayer;
+                            }
+                            else
+                            {
+                                Console.WriteLine("Cell is already taken. Choose a different cell.");
+                            }
+
                         }
                         else
                         {
@@ -54,6 +87,13 @@ class Program
                     else { Console.WriteLine("Invalid row size. Please try again."); }
                 }
                 else { Console.WriteLine("Invalid column size. Please try again."); }
+            }
+            Console.Write("Do you want to play again? (y/n): ");
+            {
+                if (Console.ReadLine()?.ToLower() != "y")
+                {
+                    break;
+                }
             }
 
             static void PrintBoard(char[,] board)
